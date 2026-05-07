@@ -21,6 +21,16 @@
 };
 
 / {
+  behaviors {
+    ctrl_mt: ctrl_mod_tap {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <125>;
+      hold-while-undecided;
+      bindings = <&kp>, <&kp>;
+    };
+  };
 
   combos {
     compatible = "zmk,combos";
@@ -75,7 +85,7 @@
       display-name = "Default";
       bindings = <
         &kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P
-        &mt LCTL A &kp S &kp D &kp F &kp G 			      &kp H &kp J &kp K &kp L &mt RCTL SCLN
+        &ctrl_mt LCTL A &kp S &kp D &kp F &kp G 			      &kp H &kp J &kp K &kp L &ctrl_mt RCTL SCLN
         &mt LSFT Z &kp X &kp C &kp V &kp B			  &kp N &kp M  &kp CMMA &kp DOT &mt LSFT SLASH
         &kp LGUI &lt LOWER SPC                    &lt RAISE SPC &kp RALT
         >;
