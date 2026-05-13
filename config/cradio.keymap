@@ -47,18 +47,6 @@
       bindings = <&kp TAB>;
     };
 
-    combo_tab_df {
-      timeout-ms = <50>;
-      key-positions = <12 13>; // df
-      bindings = <&kp TAB>;
-    };
-
-    combo_tab_as {
-      timeout-ms = <50>;
-      key-positions = <10 11>; // as
-      bindings = <&kp TAB>;
-    };
-
     combo_quot {
       timeout-ms = <50>;
       key-positions = <18 19>; // l;
@@ -96,7 +84,7 @@
       display-name = "Lower";
       bindings = <
         &kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0
-        &kp TAB    &trans       &trans       &trans       &trans		  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp DEL
+        &kp LCTRL  &trans       &trans       &trans       &trans		  &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp DEL
         &trans     &trans 	    &trans       &trans       &trans 	    &trans    &trans    &trans    &trans    &trans
         &kp LGUI &lt ADJUST SPC                    &lt ADJUST SPC &kp RALT
         >;
@@ -106,7 +94,7 @@
       display-name = "Raise";
       bindings = <
         &kp GRAVE   &trans 	    &trans       &trans       &trans 	    &trans      &kp MINUS     &kp EQUAL    &kp LBKT   &kp RBKT
-        &kp TAB     &trans      &trans       &trans       &trans		  &kp LEFT    &kp DOWN      &kp UP       &kp RIGHT  &kp BKSP
+        &kp ESC     &trans      &trans       &trans       &trans		  &kp LEFT    &kp DOWN      &kp UP       &kp RIGHT  &kp BKSP
         &trans      &trans      &trans       &trans       &trans		  &kp GLOBE   &trans        &trans       &trans     &mt LSFT ENTER
         &kp LGUI &lt ADJUST SPC                    &lt ADJUST SPC &kp RALT
         >;
