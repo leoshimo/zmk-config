@@ -65,12 +65,6 @@
       bindings = <&kp BACKSLASH>;
     };
 
-    combo_bootloader {
-      timeout-ms = <50>;
-      key-positions = <2 3 4>; // ert
-      bindings = <&bootloader>;
-    };
-
   };
 
   keymap {
